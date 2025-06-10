@@ -1,9 +1,9 @@
-````markdown
 # Serious-to-Sassy
 
 Convert formal prose—academic papers, news articles, classic drama, and more—into contemporary Gen-Z styles (**emo**, **hip-hop**, **flirty**, **sarcastic**, **sassy**).  
 Built with **Node 18 + Express**, vanilla HTML/CSS/JavaScript, and **OpenAI GPT-4o**.
 
+````markdown
 [![Node.js](https://img.shields.io/badge/node-%3E=18.x-green?logo=node.js)](https://nodejs.org/) 
 [![Express](https://img.shields.io/badge/server-express-blue?logo=express)](https://expressjs.com/) 
 [![OpenAI GPT-4o](https://img.shields.io/badge/LLM-GPT-4o-API-red?logo=openai&logoColor=white)](https://platform.openai.com/) 
