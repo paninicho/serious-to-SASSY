@@ -1,1 +1,1 @@
-create an .env file for it to work!!!
+create an .env file and put your OpenAI API key so it can run!!!
