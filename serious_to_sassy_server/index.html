@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Serious to Sassy</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+
+  <!-- 배경음악 로딩 -->
+  <audio id="bgm" loop>
+    <source src="assets/bgm.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- 야옹 소리 -->
+  <audio id="meow-sound" src="assets/meow.mp3"></audio>
+
+  <script>
+    function playBGM() {
+      const bgm = document.getElementById('bgm');
+      if (bgm) bgm.play();
+    }
+
+    function playMeow() {
+      const meow = document.getElementById("meow-sound");
+      if (meow) meow.play();
+    }
+
+    function goTranslate(style) {
+      playBGM(); // 음악 시작
+      window.location.href = `translate.html?style=${style}`;
+    }
+  </script>
+</head>
+
+<body class="light">
+
+  <div class="logo" style="transform: scale(1.1);"><img src="assets/logo.gif" /></div>
+
+  <div class="card-grid" style="transform: scale(1.0);">
+    <img src="assets/cat1.png" class="card-img" onclick="goTranslate('emo')" onmouseenter="playMeow()" />
+    <img src="assets/cat2.png" class="card-img" onclick="goTranslate('flirty')" onmouseenter="playMeow()" />
+    <img src="assets/cat3.png" class="card-img" onclick="goTranslate('hiphop')" onmouseenter="playMeow()" />
+    <img src="assets/cat4.png" class="card-img" onclick="goTranslate('sarcastic')" onmouseenter="playMeow()" />
+    <img src="assets/cat5.png" class="card-img" onclick="goTranslate('sassy')" onmouseenter="playMeow()" />
+    <img src="assets/progress.png" class="card-img disabled" />
+  </div>
+
+</body>
+</html>
